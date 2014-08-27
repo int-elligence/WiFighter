@@ -53,7 +53,7 @@ def jam():
 	gpio.output(ledg_pin, False)
 	gpio.output(ledr_pin, False)
 	gpio.output(ledb_pin, True)
-	tolcd('  INITIALISING', 1)
+	tolcd('  INITIALIZING', 1)
 	for i in range(14):
 		system('mdk3 mon0 d -c %i > /tmp/dlog%i &' % (i+1, i+1))
 	system('mdk3 mon0 a > /tmp/alog &')
